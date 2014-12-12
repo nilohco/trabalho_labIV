@@ -1,0 +1,45 @@
+
+
+<h:html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<ui:decorate template="Index.xhtml">
+	<ui:define name="centro">
+	
+	<h3 style="margin-left: 480px"> Tabela atletas</h3><br/>
+	
+	
+		<p:dataTable   >
+		<p:column headerText="Nome">
+			<h:outputText/>
+		</p:column>
+		<p:column headerText="Sobrenome">
+			<h:outputText  />
+		</p:column>
+		<p:column headerText="Idade">
+			<h:outputText />
+		</p:column>
+		
+		<p:column headerText="Esporte">
+			<h:outputText  />
+			</p:column>
+			
+			<p:column headerText="Telefone">
+			<h:outputText  />
+			</p:column>
+			
+			<p:column headerText="Altura">
+			<h:outputText  />
+			</p:column>
+			
+		<p:column headerText="Açoes" style="width: 50px">
+			<h:outputText  />
+			</p:column>
+		
+		</p:dataTable>
+	</ui:define>
+</ui:decorate>
+
+</h:html>

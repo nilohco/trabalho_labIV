@@ -1,0 +1,52 @@
+<h:html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	 xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<ui:decorate template="Index.xhtml">
+	<ui:define name="centro">
+	
+	<h3 style="margin-left: 480px"> Relatorios Tecnico</h3><br/>
+	<h:form style="display: inline">
+		
+		    			<p:selectOneMenu value="filtrar" style="position: hight:5; display: " >
+		    				<f:selectItem itemLabel="nome"/>
+		    				<f:selectItem itemLabel="sobrenome"/>
+		    				<f:selectItem itemLabel="idade"/>
+		    				<f:selectItem itemLabel="esporte"/>
+		    			</p:selectOneMenu>
+		    			
+		    			<h:inputText style="margin-left: 10"></h:inputText >
+		    			<p:commandButton value="filtrar" style="margin-left: 10; margin-top: 40px"></p:commandButton>
+		    			
+	</h:form>	    			
+		<p:dataTable   >
+		<p:column headerText="Nome">
+			<h:outputText/>
+		</p:column>
+		<p:column headerText="Sobrenome">
+			<h:outputText  />
+		</p:column>
+		<p:column headerText="Idade">
+			<h:outputText />
+		</p:column>
+		
+		<p:column headerText="Esporte">
+			<h:outputText  />
+			</p:column>
+			
+			<p:column headerText="Telefone">
+			<h:outputText  />
+			</p:column>
+			
+			<p:column headerText="Altura">
+			<h:outputText  />
+			</p:column>
+			
+		
+		</p:dataTable>
+	</ui:define>
+</ui:decorate>
+
+</h:html>
