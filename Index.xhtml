@@ -1,0 +1,44 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Index</title>
+</h:head>
+<h:body>
+ 	<p:layout fullPage="true">
+ 		<p:layoutUnit position="west" size="220">
+ 			<h:form>
+ 			
+ 				<p:menu style="width: 195; height: 400px; " >
+ 					<p:submenu id="tituloMenu" label="Clubmanager">
+ 					 <p:menuitem value="Home" action="Index.xhtml"/>
+ 					</p:submenu>
+ 					<p:submenu label="Atleta">
+ 						<p:menuitem value="Cadastro" action="NovoAtleta.xhtml" />
+ 						<p:menuitem value="listarAtletas" action="ListarAtletas.xhtml"></p:menuitem>
+ 					</p:submenu>
+ 					
+ 					<p:submenu label="Tecnico">
+ 						<p:menuitem value="Cadastro" action="CadastroTecnico.xhtml" />
+ 						<p:menuitem value="ListarTecnicos" action="ListarTecnico.xhtml"></p:menuitem>
+ 					</p:submenu>
+ 					
+ 					<p:submenu label="Relatorios">
+ 						<p:menuitem value="Relatorios Atleta" action="RelatoriosAtleta.xhtml" />
+ 						<p:menuitem value="Relatorios Tecnico" action ="RelatoriosTecnico.xhtml" ></p:menuitem>
+ 					</p:submenu>
+ 				</p:menu>
+ 			</h:form>
+ 		</p:layoutUnit>
+ 		
+ 		<p:layoutUnit position="center" >
+ 			<ui:insert name="centro">
+ 			 
+ 			</ui:insert>
+ 		</p:layoutUnit>
+ 	</p:layout>
+</h:body>
+</html>

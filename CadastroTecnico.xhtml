@@ -1,0 +1,48 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	
+	<ui:decorate template="Index.xhtml">
+		<ui:define name="centro">
+			<p:fieldset legend=" NOVO TECNICO" toggleable="true">
+				<center>
+				<h:form>
+				<p:growl id="growl"/>
+					<h:panelGrid columns="3" id="grid">
+					
+						<p:outputLabel value="Nome" />
+						<p:inputText id="nome"  required="true" requiredMessage="O campo nome deve ser preenchido" />
+						<p:message for="nome" />
+									
+												
+						<p:outputLabel value="Idade" />
+						<p:inputText id="Idade"  required="true" requiredMessage="O campo Idade deve ser preenchido" />
+						<p:message for="Idade" />
+						
+						
+						<p:outputLabel value="Esporte" />
+						<p:inputText id="Esporte" value="#{clubController.atleta.esporte}" required="true" requiredMessage="O campo Esporte deve ser preenchido" />
+						<p:message for="Esporte" />
+						
+						
+						<p:outputLabel value="Telefone" />
+						<p:inputMask id="Telefone" mask="(99) 9999-9999"  required="true" requiredMessage="O campo Telefone deve ser preenchido" />
+						<p:message for="Telefone" />
+						
+																
+						
+					</h:panelGrid>
+					<p:separator style=" width: 80%; height: 5px"/>
+					
+					<p:commandButton value="Salvar" update="growl"   />
+					<p:commandButton value="Limpar" type="clear"></p:commandButton>
+					
+				</h:form>
+				</center>
+			</p:fieldset>
+		
+		</ui:define>
+	</ui:decorate>
+</html>
